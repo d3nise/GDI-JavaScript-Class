@@ -11,6 +11,8 @@
 <html>
   <head>
     <title>Class 1: Introduction to JavaScript and Basic Programming Concepts</title>
+
+    <!-- LINKING JS FILE -->
     <script src="js/mycode1.js"></script>
     <link rel="icon" href="images/gdi.png"/>
    <!-- Bootstrap CSS -->
@@ -44,28 +46,30 @@
   </nav>
 
   <div class="container">
-   <p>This is my awesome JavaScript Code.</p>
- </div>
-    <!-- <script> 
-      alert('Hello World!');
-      console.log('Secret message');
-    </script>
+   <p>This is my awesome JavaScript Code. I love kitties, I have 
+    <span id="p1">
+    </span> 
+    and I  love them all.
+   </p>
+
+   <!-- 
+    EMPTY P TAG WITH AN ID USED 
+    TO PRINT STUFF FROM YOUR JS 
+        document.getElementById("demo").innerHTML = res;
     -->
-
-    <!-- CONSOLE EXAMPLE
-    <script> 
-      console.log('Hello World!');
-      console.log('I am glad to meet you');
-      console.log('I am fuzzy');
-    </script>
-  -->
-
+   <p id="demo">
+     
+   </p>
+ </div>
+  
+  <!-- CALL FUNCTIONS FROM mycode1.js -->
   <script>
     //secretMessage();
     //consoleExample();
     //createVariable();
     //arithmetic();
-    //consoleExample();
+    //nameFunction();
+    //myFunction();
     //stringFunction();
     restaurant();
   </script>

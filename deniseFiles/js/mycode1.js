@@ -14,10 +14,12 @@
 	Create a new file called mycode.js.
 	Move your code to this file and link it to your page.
 */
+
+
 function secretMessage(){
-  alert('Hello World!');
   console.log('Secret message');
 }
+secretMessage();
 
 /*
 	Let’s Develop It 1.2	
@@ -43,6 +45,7 @@ function consoleExample(){
 function createVariable(){
 	var kitty = 5;
 	console.log(kitty);
+	document.getElementById("p1").innerHTML=(kitty);
 }
 
 /*
@@ -55,7 +58,7 @@ function arithmetic(){
 	var numberOfPuppies = 5;
 	var totalAnimals = numberOfKittens + numberOfPuppies;
     console.log(totalAnimals);
-};
+}
 /*
 	Let’s Develop It 1.5 
 	Create two variables, a first name and a last name, and then put them together 
@@ -64,6 +67,22 @@ function arithmetic(){
 	will treat the number like a string. 
 	You can run it in mycode.js.
 */
+function nameFunction(){
+    var firstName = 'Denise';
+    var lastName = 'Nguyen';
+    var fullName = firstName + ' ' + lastName;    // value is 'Erik Krieg'
+	console.log(fullName);
+}
+
+// USING CONCAT JS FUNCTION
+function myFunction() {
+    var str1 = "Hello ";
+    var str2 = "world!";
+    var res = str1.concat(str2);
+    document.getElementById("demo").innerHTML = res;
+}
+
+// COMBINES STRING AND INT 
 function stringFunction(){
     var numberOfFruit = 6;
     var typeOfFruit = 'bananas';
@@ -82,8 +101,10 @@ function stringFunction(){
 function restaurant(){
 	var billPreTip = 13.60;
 	var tipPercent = 0.05; // Can be changed
-	var billTip = billPreTip.toFixed(2) * tipPercent.toFixed(2);
-	var receipt = 'Meal: ' + billPreTip + ' Tip: ' + billTip + ' Total: ' + (billPreTip + billTip).toFixed(2) ;
+	var billTip  = billPreTip * tipPercent;
+	var receipt  = 'Meal: $' + billPreTip + '\n' + 
+				   'Tip: $' + billTip +  '\n' + 
+				   'Total: $' + (billPreTip + billTip).toFixed(2) ;
 	console.log(receipt);
 }
 
